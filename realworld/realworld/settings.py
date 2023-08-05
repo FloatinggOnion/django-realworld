@@ -157,6 +157,10 @@ REST_FRAMEWORK = {
 }
 
 REST_AUTH = {
+    # User details serializer
+    'USER_DETAILS_SERIALIZER': 'userapp.serializers.CustomUserDetailsSerializer',
+
+    # Authentication
     'USE_JWT' : True,
     'JWT_AUTH_COOKIE': 'realworld-auth',
     'JWT_AUTH_REFRESH_COOKIE': 'realworld-refresh-token',
